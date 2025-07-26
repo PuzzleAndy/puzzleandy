@@ -6,6 +6,9 @@ def read(path):
 	im = bgr_to_rgb(im)
 	return im
 
+def write(im,path):
+	cv2.imwrite(path,im)
+
 def show(im):
 	im = rgb_to_bgr(im)
 	cv2.imshow('',im)
